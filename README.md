@@ -2,6 +2,9 @@
 
 <h3>회원 관리 페이지</h3>
 <br>
+<i>회원정보를 관리하는 간단한 페이지 구현입니다.</i>
+<br>
+<i>주요기능은 등록,전체회원정보,수정 및 삭제 기능입니다..</i>
 <hr>
 
 ![image](https://user-images.githubusercontent.com/71121027/100846632-183eca00-34c2-11eb-9577-0c053f7dfcb6.png)
