@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="org.jht.mapper.BoardDAO">
+	<!-- 글쓰기를 하기 위한 DAO(Insert) -->
+	<insert id="boardInsert">
+		insert into tbl_board(title,content)
+		values(#{title},#{content});
+	</insert>
+	<select id="boardList" resultType="org.jht.dto.BoardDTO">
+		select * from tbl_board;
+	</select>
+	<select id="boardDetail" resultType="org.jht.dto.BoardDTO">
+		select * 
+		from tbl_board 
+		where bno=#{bno};
+	</select>
+	<update id="boardUpdate">
+		update tbl_board 
+		set title=#{title}, content=#{content}
+		 where bno=#{bno};
+	</update>
+	<delete id="boardDelete">
+		delete from tbl_board 
+		where bno=#{bno};
+	</delete>
+  </mapper>
+  
+ 
